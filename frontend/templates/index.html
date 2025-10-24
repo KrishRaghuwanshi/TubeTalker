@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video RAG Query</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+<body class="bg-light">
+    <div class="container mt-5">
+        <div class="card shadow-sm">
+            <div class="card-body">
+                <h1 class="card-title text-center mb-4">Analyze a YouTube Video 🎬</h1>
+                
+                <div class="input-group mb-3">
+                    <input type="text" id="youtube-url" class="form-control" placeholder="Enter YouTube URL...">
+                    <button class="btn btn-primary" id="process-btn">Process Video</button>
+                </div>
+
+                <div id="status-container" class="mt-4" style="display: none;">
+                    <div class="d-flex align-items-center">
+                        <div class="spinner-border text-primary me-3" role="status">
+                            <span class="visually-hidden">Loading...</span>
+                        </div>
+                        <strong id="status-message">Starting job...</strong>
+                    </div>
+                </div>
+                
+                <div id="query-section" class="mt-4" style="display: none;">
+                    <hr>
+                    <h4 class="mb-3">Ask a Question</h4>
+                    <div class="input-group">
+                        <input type="text" id="query-text" class="form-control" placeholder="What is linear regression?">
+                        <button class="btn btn-success" id="query-btn">Get Answer</button>
+                        <button class="btn btn-danger" id="stop-btn">Stop Session</button>
+                    </div>
+                </div>
+
+                <div id="results-section" class="mt-4" style="display: none;">
+                    <h5 class="text-muted">Answer:</h5>
+                    <div id="answer" class="p-3 bg-light rounded border"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../static/js/main.js"></script>
+</body>
+</html>

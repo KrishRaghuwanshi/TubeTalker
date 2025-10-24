@@ -1,0 +1,14 @@
+fastapi
+uvicorn[standard]
+lancedb
+yt-dlp
+moviepy
+openai-whisper
+google-generativeai
+python-dotenv
+llama-index-multi-modal-llms-gemini
+llama-index-vector-stores-lancedb
+llama-index-embeddings-clip
+torch
+torchvision
+llama-index-core
